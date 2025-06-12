@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 otp_store = {}
 
-EMAIL_ADDRESS = "ramesh.thakur482666@gmail.com"
-EMAIL_PASSWORD = "knyi yepq immk bujs"
+EMAIL_ADDRESS = "your-email@gmail.com"
+EMAIL_PASSWORD = "otpi yoep tkhk uqes" # get this from the App Passwords for the google account
 
 def generate_otp(length=6):
     return ''.join(random.choices(string.digits, k=length))
