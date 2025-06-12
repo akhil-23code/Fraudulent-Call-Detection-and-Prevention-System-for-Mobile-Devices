@@ -23,3 +23,5 @@
 1. Open project in Android Studio
 2. Hardcode the laptop's IP address (make sure that external phone & laptop is connected to the same network)
 3. Run the app in your external mobile device
+
+## MLService Link : [Model & Dataset](https://drive.google.com/drive/folders/1eaMqw-ghzdF7lr39Ck1zcIvxjCuwjHN9?usp=sharing)
