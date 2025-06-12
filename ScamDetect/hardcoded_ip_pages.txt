@@ -1,0 +1,4 @@
+Change the IP addresses from these pages:
+1. network_security_config.xml
+2. RetrofitClient.kt
+3. 
