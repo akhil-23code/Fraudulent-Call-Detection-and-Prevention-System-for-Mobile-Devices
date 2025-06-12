@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Number Display -->
+    <TextView
+        android:id="@+id/tvNumberDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Dial Pad -->
+    <GridLayout
+        android:id="@+id/gridDialPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:layout_gravity="center"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <!-- Dial pad buttons -->
+        <Button android:text="1" style="@style/DialPadButton"/>
+        <Button android:text="2" style="@style/DialPadButton"/>
+        <Button android:text="3" style="@style/DialPadButton"/>
+        <Button android:text="4" style="@style/DialPadButton"/>
+        <Button android:text="5" style="@style/DialPadButton"/>
+        <Button android:text="6" style="@style/DialPadButton"/>
+        <Button android:text="7" style="@style/DialPadButton"/>
+        <Button android:text="8" style="@style/DialPadButton"/>
+        <Button android:text="9" style="@style/DialPadButton"/>
+        <Button android:text="*" style="@style/DialPadButton"/>
+        <Button android:text="0" style="@style/DialPadButton"/>
+        <Button android:text="#" style="@style/DialPadButton"/>
+
+    </GridLayout>
+
+    <!-- Container for Call + Delete buttons, centered -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Call"
+            android:rotation="-87"
+            android:src="@android:drawable/ic_menu_call"
+            app:backgroundTint="@android:color/holo_green_dark" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Delete"
+            android:gravity="center"
+            android:text="⌫"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
